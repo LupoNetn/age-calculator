@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <form action="" class="my-form">
+      <div class="form-child">
+        <label for="day">DAY</label>
+        <br>
+        <input type="text" name="day" id="day">
+        <br>
+        <span id="day-err" class="err"></span>
+      </div>
+
+      <div class="form-child">
+        <label for="month">MONTH</label>
+        <br>
+        <input type="text" name="month" id="month">
+        <br>
+        <span id="month-err" class="err"></span>
+      </div>
+
+      <div class="form-child">
+        <label for="year">YEAR</label>
+        <br>
+        <input type="text" name="year" id="year">
+        <br>
+        <span id="year-err" class="err"></span>
+      </div>
+    </form>
+
+    <div class="line-break">
+      <hr>
+      <div class="icon-img-cont">
+        <button type="submit" id="submit-btn">
+          <img src="assets/images/icon-arrow.svg" alt="image" class="icon-img">
+        </button>
+      </div>
+    </div>
+    <span id="btn-err" class="err"></span> 
+    
+
+    <div class="age">
+      <div class="year">
+        <p class="data data-year"><span id="user-year">- -</span>years</p>
+      </div>
+
+      <div class="month">
+        <p class="data data-month"><span id="user-month">- -</span>months</p>
+      </div>
+
+      <div class="day">
+        <p class="data data-day"><span id="user-day">- -</span>days</p>
+      </div>
+    </div>
+  </main>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Lupo Oluwatobi</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,108 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--Light-grey);
+}
+span {
+    color: var(--Purple);
+}
+label {
+    color: var(--Smokey-grey);
+    font-weight: 500;
+}
+hr {
+    margin-block: 4em;
+}
+main {
+    box-sizing: border-box;
+    border: 1px solid var(--White);
+    border-radius: 20px;
+    border-bottom-right-radius: 30%;
+    max-width: 600px;
+    margin-inline: auto;
+    margin-block-start: 9em;
+    padding: 3rem;
+    background-color: var(--White);
+}
+
+.icon-img-cont {
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+}
+.data {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    
+}
+
+form {
+    display: flex;
+    margin-bottom: 1rem;
+}
+input {
+    box-sizing: border-box;
+    padding-block: 1em;
+    width: 60%;
+    flex: 1;
+    border-radius: 10px;
+    border: 1px solid var(--Smokey-grey);
+}
+input:focus {
+    outline: none;
+    border: 1px solid var(--Off-black);
+}
+.line-break {
+    position: relative;
+}
+#submit-btn {
+    background-color: purple;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+#submit-btn:hover {
+     background-color: var(--Off-black);
+}
+.err {
+    font-size: 12px;
+    color: var(--Light-red);
+}
+.err-border {
+    border: 1px solid red;
+}
+@media(max-width: 608px) {
+
+    main {
+        margin: 2em;
+    }
+    .icon-img-cont {
+        width: 30px;
+        height: 30px;
+        padding: .5em;
+        left: 35%;
+        transform: translate(0%,50%);
+    }
+}
+@media(min-width: 320px) and (max-width: 380px) {
+    input {
+        width: 80%;
+    }
+    .data {
+        font-size: 1.67rem;
+    }
+    label {
+        font-size: .7rem;
+    }
+}
